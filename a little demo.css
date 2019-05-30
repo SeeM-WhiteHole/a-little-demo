@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    /*background:url("img/DarkSpace.png");*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+img{
+    display: none;
+}
+#roomThreeGG{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+    text-align: center;
+    display: none;
+}
+#roomThreeGG span{
+    position: relative;
+    font-family: 华文新魏;
+    color: red;
+}
+#spanOne{
+    font-size: 400px;
+}
+#spanTwo{
+    font-size: 75px;
+}
+#roomThreeGG button{
+    position: fixed;
+    top:60%;
+    left: 39%;
+    font-size: 90px;
+    color: gray;
+    background-color: darkgray;
+    font-family: 华文新魏;
+    border-radius: 25px;
+}
+#startgame{
+    position: absolute;
+    width: 1890px;
+    height: 960px;
+    background: url("img/$cover.png");
+    text-align: center;
+    display: block;
+}
+#startgame span{
+    position: fixed;
+    top:75%;
+    left: 39%;
+    font-size: 90px;
+    color: purple;
+    font-family: 隶书;
+    border-radius: 20px;
+    animation:change 8s infinite;
+}
+@keyframes change {
+    0% { color: red;}
+    12.5%{color: orange}
+    25%{color: yellow}
+    37.5%{color: green}
+    50% { color: skyblue;}
+    62.5%{color: blue}
+    75%{color: purple}
+    87.5%{color: purple}
+    100% {color: red}
+}
+#lastgame{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    text-align: center;
+    display: none;
+}
+#lastgame button{
+    position: fixed;
+    top:30%;
+    left: 39%;
+    font-size: 90px;
+    color: skyblue;
+    background-color: transparent;
+    font-family: 华文新魏;
+    border-radius: 20px
+}
+#clues {
+    position: fixed;
+    left: 30%;
+    top:20%;
+    width: 120px;
+    height: 140px;
+    background: rgba(255,0,0,0.3);
+    text-align: center;
+    display: none;
+}
+#clues span{
+    font-size: 30px;
+    font-family: 楷体;
+}
+#byebye {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    text-align: center;
+    display: none;
+}
+#byebye span{
+    position: fixed;
+    top:75%;
+    left: 39%;
+    font-size: 90px;
+    color: purple;
+    font-family: 隶书;
+    border-radius: 20px;
+    animation:change 3s infinite;
+}
